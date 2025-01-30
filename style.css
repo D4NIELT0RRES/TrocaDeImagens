@@ -1,9 +1,10 @@
 :root{
+    
     --imagem1: url('./img/img1.webp')
-    --imagem2: url('./img/img2.jpg')
-    --imagem3: url('./img/img3.jpg')
-    --imagem4: url('./img/img4.jpg')
-    --imagem5: url('./img/img5.jpg')
+    --imagem2: url('./img/img2.jpg');
+    --imagem3: url('./img/img3.jpg');
+    --imagem4: url('./img/img4.jpg');
+    --imagem5: url('./img/img5.jpg');
 
 }
 
@@ -19,7 +20,9 @@ body{
     justify-content: center;
     align-items: center;
     background-image: var(--imagem1);
-    transition: background-color 1s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
