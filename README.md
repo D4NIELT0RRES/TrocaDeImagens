@@ -1,5 +1,5 @@
 # TrocaDeImagens
-![](./Video.gif)
+![](./img/IMG.png)
 
 
 
