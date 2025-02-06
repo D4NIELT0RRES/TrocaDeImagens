@@ -2,23 +2,28 @@
 
 const botaoTrocaImagem = document.getElementById("trocar-imagem")
 
-const imagens = [
 
-    'url("./img/img1.webp")',
-    'url("./img/img2.jpg")',
-    'url("./img/img3.jpg")',
-    'url("./img/img4.jpg")',
-    'url("./img/img5.jpg")'
+function trocarFoto(){
+    const body = document.querySelector('body');
 
-];
+    const imagens = [
+        'url("./img/img1.webp")',
+        'url("./img/img2.jpg")',
+        'url("./img/img3.jpg")',
+        'url("./img/img4.jpg")',
+        'url("./img/img5.jpg")'
+      ];
 
-document.getElementById('trocar-imagem').addEventListener('click', function() {
-
-    //RandomIndex - É usado para gerar um número aleatório percorrendo um array.
-    const randomIndex = Math.floor(Math.random() * imagens.length);
-    document.body.style.setProperty('--imagem1', imagens[randomIndex]);
-});
+    let fundoAtual = 0;
 
 
+    return function(){
+        fundoAtual = (fundoAtual + 1) % imagens.length;
+        body.style.backgroundImage = imagens[fundoAtual];    
+    }
+    
+}
 
-botaoTrocaImagem.addEventListener("click", trocarImagem)
+const mudarFundo = trocarFoto()
+
+botaoTrocaImagem.addEventListener('click', mudarFundo)
