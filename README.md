@@ -18,4 +18,4 @@ Projeto de javascript para trocar imagens do body. O objetivo desse projeto é c
 
 ## Autor
 
-- [Daniel Torres](https://www.linkedin.com/in/daniel-torres-007a54217/)
+- [Daniel Torres](https://www.linkedin.com/in/daniel-gomes-torres-890102284/)
